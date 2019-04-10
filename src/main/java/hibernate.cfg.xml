@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:oracle:thin:@10.10.10.230:1521:orcl</property>
+        <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <mapping resource="cn/sl/slvip_mall/po/SlAddress.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlAddress"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlBanktran.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlBanktran"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlBankusers.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlBankusers"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlBasicinfo.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlBasicinfo"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlComm.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlComm"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlConsultation.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlConsultation"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlDatadic.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlDatadic"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlDoctype.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlDoctype"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlNotice.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlNotice"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlRegion.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlRegion"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlRole.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlRole"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlSetmeal.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlSetmeal"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlSetmealtype.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlSetmealtype"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlUsers.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlUsers"/>
+        <mapping resource="cn/sl/slvip_mall/po/SlViptype.hbm.xml"/>
+        <mapping class="cn.sl.slvip_mall.po.SlViptype"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
